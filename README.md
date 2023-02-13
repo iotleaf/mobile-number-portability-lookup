@@ -56,7 +56,7 @@ port=3053
 # Command line install and start
 
 ```console
-cd /mnp/dns_daemon/x86_64-linux/Debug/
+cd /daemon/
 sudo ./dns_daemon      -install
 sudo systemctl enable  dns_daemon
 sudo systemctl start   dns_daemon
@@ -91,7 +91,7 @@ sudo systemctl disable dns_daemon
 # linux uninstall daemon
 
 ```console
-cd /mnp/dns_daemon/x86_64-linux/Debug/
+cd /daemon/
 sudo ./dns_daemon      -uninstall   
 ```
 
