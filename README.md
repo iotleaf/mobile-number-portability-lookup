@@ -1,12 +1,14 @@
 # mobile-number-portability-lookup
 Mobile Number Portability Lookup
 
-# Client Execute..
+# Client:
+
+## Client Execute..
 ```console
 dig @mnp.hopto.org -p3054 2.1.8.3.4.5.3.9.4.1.6.e164.arpa IN NAPTR
 ```
 
-# Client Result..
+## Client Result..
 
 ```console
 ; <<>> DiG 9.16.37-Debian <<>> @mnp.hopto.org -p3054 2.1.8.3.4.5.3.9.4.1.6.e164.arpa IN NAPTR
@@ -37,19 +39,20 @@ The system also provides <b>GUI</b> tools for systems with a screen attached (or
 <br/>
 These screenshots show both the daemon and GUI applications.
 
-#  Server
+##  Server Application(s)
 
 [Screenshot Server](/screenshots/dns_dist_screenshot.png)
 <img src="/screenshots/dns_dist_screenshot.png"></img>
 
-#  Client
+##  Client Application (dig)
 [Screenshot Client](/screenshots/dns_dist_dig.png)
 <img src="/screenshots/dns_dist_dig.png"></img>
 <hr/>
 
-# linux install daemon
+# linux daemon
+## install
 
-# dns_daemon.ini
+### dns_daemon.ini
 Modify address and port number..
 ```console
 [config]
@@ -58,7 +61,7 @@ port=3053
 ```
 <hr/>
 
-# Command line install and start
+### Command line install and start
 
 ```console
 cd /daemon/
@@ -68,8 +71,7 @@ sudo systemctl start   dns_daemon
 sudo systemctl status  dns_daemon
 ```
 
-
-# Log 
+### Log 
 ```console
 15:12:08 Log created
 15:12:08 Daemon received stop signal
@@ -81,8 +83,7 @@ sudo systemctl status  dns_daemon
 15:12:44 Binding 192.168.1.75 with 3053
 ```
 
-
-# linux manage daemon
+## manage
 
 ```console
 sudo systemctl enable  dns_daemon
@@ -93,7 +94,7 @@ sudo systemctl disable dns_daemon
 ```
 
 
-# linux uninstall daemon
+## uninstall
 
 ```console
 cd /daemon/
