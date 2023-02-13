@@ -41,3 +41,57 @@ dig @mnp.hopto.org -p3054 2.1.8.3.4.5.3.9.4.1.6.e164.arpa IN NAPTR
 [Screenshot Client](/screenshots/dns_dist_dig.png)
 <img src="/screenshots/dns_dist_dig.png"></img>
 <hr/>
+
+# linux install daemon
+
+# dns_daemon.ini
+Modify address and port number..
+```console
+[config]
+address=192.168.1.75
+port=3053 
+```
+<hr/>
+
+# Command line install and start
+
+```console
+cd /mnp/dns_daemon/x86_64-linux/Debug/
+sudo ./dns_daemon      -install
+sudo systemctl enable  dns_daemon
+sudo systemctl start   dns_daemon
+sudo systemctl status  dns_daemon
+```
+
+
+# Log 
+```console
+15:12:08 Log created
+15:12:08 Daemon received stop signal
+15:12:08 Daemon worker thread destroyed
+15:12:08 Daemon stopped
+15:12:14 STARTED
+15:12:14 Daemon worker thread created
+15:12:14 Daemon worker thread executing
+15:12:44 Binding 192.168.1.75 with 3053
+```
+
+
+# linux manage daemon
+
+```console
+sudo systemctl enable  dns_daemon
+sudo systemctl start   dns_daemon
+sudo systemctl status  dns_daemon
+sudo systemctl stop    dns_daemon
+sudo systemctl disable dns_daemon
+```
+
+
+# linux uninstall daemon
+
+```console
+cd /mnp/dns_daemon/x86_64-linux/Debug/
+sudo ./dns_daemon      -uninstall   
+```
+
