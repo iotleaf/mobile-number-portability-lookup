@@ -1,0 +1,10 @@
+16:31:29 Log created
+16:31:29 Daemon installing
+16:31:29 Daemon installed: /lib/systemd/system/dns_daemon.service
+16:37:34 Daemon worker thread created
+16:37:34 Daemon worker thread executing
+16:38:59 Daemon received stop signal
+16:38:59 Daemon worker thread terminated
+16:38:59 Daemon worker thread destroyed
+16:38:59 Daemon stopped
+16:40:19 Daemon uninstalling
