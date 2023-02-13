@@ -31,6 +31,11 @@ dig @mnp.hopto.org -p3054 2.1.8.3.4.5.3.9.4.1.6.e164.arpa IN NAPTR
 <hr/>
 
 # Screenshots
+The server would normally run on a <b>headless</b> system (i.e. no screen, keyboard or mouse) via the <b>dns_daemon</b> application.
+<br/><br/>
+The system also provides <b>GUI</b> tools for systems with a screen attached (or <b>VNC</b>) to make testing easier.
+<br/>
+These screenshots show both the daemon and GUI applications.
 
 #  Server
 
